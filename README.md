@@ -9,3 +9,4 @@
 - Most useful Methods and Cheats
 - Widgetbot 
 - Customer Support
+<link rel='icon' type='image/x-icon' href='download (8).png'>
