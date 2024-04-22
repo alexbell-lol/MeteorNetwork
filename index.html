@@ -23,6 +23,7 @@ button {
     <button onclick="window.open('https://discor.pages.dev/e');">Chat</button>
     <button onclick="window.open('https://github.com/Eliteservicesjoin/MeteorNetwork.git');">github</button>
     <button onclick="window.open('https://discord.gg/A2WWbyvC6f')">Discord</button>
+    <button onclick="blank();">About Blank</button>
 <form class='searchbox' id='searchbox'>
     <input class='search' id='search' placeholder='Search' type='text'/>
 </form>
@@ -71,6 +72,21 @@ button {
     font-size: 1.2em;
     }
 </style>
+<script>
+        function blank() {
+            var url = window.location.href;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var embed = win.document.createElement('embed');
+            embed.style.border = 'none';
+            embed.style.width = '100%';
+            embed.style.height = '100%';
+            embed.style.margin = '0';
+            embed.src = url;
+            win.document.body.appendChild(embed);
+        }
+</script>
 <script>
     document.title="Meteor";
     searchbox.style.color="#0f0f0f";
