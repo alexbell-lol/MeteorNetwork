@@ -4,15 +4,19 @@
 <script src="/search.js" defer></script>
 <script src="/error.js" defer></script>
 <link rel="icon" type="image/x-icon" href="img/images (4).png">
+<style>
+button {
+    border-radius: 30px;
+    color: white;
+    background-color: blue;
+}
 <div class='title'>
     <h1 id='title1'>Meteor Network</h1>
 </div>
-   <a href="" onclick="showContent('about')">Home</a>
-      <a href="https://gun-mayhem-2.github.io/" onclick="showContent('skills')">Games</a>
-      <a href="https://discordseliteservices.square.site/" onclick="showContent('contact')">Site Store</a>
-      <a href="" onclick="showContent('projects')">apps(coming soon)</a>
-     
-    </nav>
+  <button onclick="showContent('about')">Home</button>
+  <button onclick="showContent('skills'); window.open('https://gun-mayhem-2.github.io/');">Games</button>
+  <button onclick="showContent('contact'); window.open('https://discordseliteservices.square.site/');">Site Store</button>
+  <button onclick="showContent('projects')">apps(coming soon)</button>
 <form class='searchbox' id='searchbox'>
     <input class='search' id='search' placeholder='Search' type='text'/>
 </form>
