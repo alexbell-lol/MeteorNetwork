@@ -16,6 +16,6 @@
 <h4 align="center">Uses the Ultraviolet Proxy to browse the web freely.</h3>
 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?
+[![Deploy with Vercel](https://vercel.com/button)
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)
 
