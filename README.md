@@ -15,11 +15,6 @@
 
 <h4 align="center">Uses the Ultraviolet Proxy to browse the web freely.</h3>
 
-
-![Deploy with Vercel](https://vercel.com/button)<h1 align="center">Meteor Network</h1>
-
-<h4 align="center">Uses the Ultraviolet Proxy to browse the web freely.</h3>
-
 <p align="center">
 <a href="https://discord.gg/3DtgmKusbS">
 
