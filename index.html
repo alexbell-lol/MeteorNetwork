@@ -114,7 +114,7 @@ button {
         alert(err.toString());
         throw err;
       }
-      const url = search(input.value, "about:blank");
+      const url = search(input.value, "https://www.google.com/?q=%s");
     window.location.href=__uv$config.prefix + __uv$config.encodeUrl(url);
     });
 
