@@ -24,6 +24,45 @@ button {
     <button onclick="window.open('https://discord.gg/A2WWbyvC6f')">Discord</button>
     <button onclick="blank();">About Blank</button>
   <button onclick="window.open('')">Themes</button>
+
+<a onclick="fullscreen();">
+  <div id="fsbutton">Fullscreen</div>
+</a>
+  
+<iframe id="frame" src="home.html"></iframe>
+<script>
+  //document.getElementById('xb').click();
+	
+  var frame=document.getElementById("frame");
+  var fsbutton=document.getElementById("fsbutton");
+        
+function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
+    function blank(){
+      (function () {var url = document.URL; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe);window.location.href="https://google.com";})();
+    }
+
+     if (get_cookie("location")!=null){
+          frame.src=get_cookie("location");
+  }
+        
+
+  fsbutton.style.top=(document.getElementsByClassName("navbar")[0].offsetHeight-16)+"px";
+  
+  frame.style.height=(window.innerHeight-document.getElementsByClassName("navbar")[0].offsetHeight+5)+"px";
+
+fsbutton.style.width=(fsbutton.offsetWidth+17)+"px";
+fsbutton.style.left=(window.innerWidth/2-fsbutton.offsetWidth/2+5)+"px";
+                  
+  function fullscreen(){
+    if (frame.requestFullscreen) {
+      frame.requestFullscreen();
+    } else if (frame.webkitRequestFullscreen) {
+      frame.webkitRequestFullscreen();
+    } else if (frame.msRequestFullscreen) {
+      frame.msRequestFullscreen();
+    }
+  }
+
 <form class='searchbox' id='searchbox'>
     <input class='search' id='search' placeholder='Search' type='text'/>
 </form>
