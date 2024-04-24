@@ -24,15 +24,14 @@ const bare = createBareServer("/bare/");
 app.use(express.static(path.join(__dirname, 'static')));
 
 
-app.get('/apps/', (req, res) => {
+app.get('//', (req, res) => {
     res.sendFile(path.join(__dirname, 'static', 'apps.html'));
 });
 
 const routes = [
-    { path: '/~', file: 'apps.html' },
-    { path: '/0', file: 'tabs.html' },
-    { path: '/1', file: 'go.html' },
-    { path: '/', file: 'index.html' },
+    // very pro express routing editing
+    { path: '/@', file: 'meteor.html' },
+    
 ];
 
 routes.forEach((route) => {
