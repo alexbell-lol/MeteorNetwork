@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: meteor
+    env: docker
+    plan: free
