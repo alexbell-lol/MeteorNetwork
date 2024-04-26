@@ -1,7 +1,0 @@
-{
-  "name": "meteor",
-  "description": "unknown",
-  "repository": "https://github.com/Eliteservicesjoin/MeteorNetwork",
-  "keywords": ["school", "math"],
-  "image": "heroku/nodejs"
-}
